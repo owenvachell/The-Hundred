@@ -25,10 +25,10 @@
     --text-normal: #fff;
     --text-accent: var(--highlight-pink);
     --text-on-accent: #fff;
-    --text-highlight-bg: var(--highlight-yellow);
+    --text-highlight-bg: var(--highlight-green);
     --text-highlight-bg-active: var(--highlight-orange);
-    --interactive-accent-hover: var(--highlight-purple);
-    --text-accent-hover: var(--highlight-purple);
+    --interactive-accent-hover: var(--highlight-green);
+    --text-accent-hover: var(--highlight-green);
 }
 
 body {
@@ -52,25 +52,22 @@ h1, h2, h3, h4, h5, h5, h6,
 .markdown-preview-view h2 {
     font-size: 150%;
     line-height: 140%;
-    color: var(--highlight-purple);
+    color: var(--highlight-green);
 }
 
 .markdown-preview-view h3 {
     font-size: 130%;
     line-height: 130%;
-    color: var(--highlight-orange);
 }
 
 .markdown-preview-view h4 {
     font-size: 120%;
     line-height: 120%;
-    color: var(--highlight-green);
 }
 
 .markdown-preview-view h5 {
     font-size: 115%;
     line-height: 110%;
-    color: var(--highlight-red);
 }
 
 .markdown-preview-view h6 {
@@ -113,11 +110,15 @@ h1, h2, h3, h4, h5, h5, h6,
 }
 
 .nav-file-title.is-active, 
-.nav-folder-title.is-active, 
+.nav-folder-title.is-active {
+    background-color: var(--background-primary);
+    color: var(--text-accent);
+}
+ 
 body:not(.is-grabbing) .nav-file-title:hover, 
 body:not(.is-grabbing) .nav-folder-title:hover {
     background-color: var(--background-primary);
-    color: var(--highlight-pink);
+    color: var(--text-accent-hover);
 }
 
 /* ----- SETTINGS PANEL ----- */
@@ -408,6 +409,10 @@ a.tag:hover {
 
 .today.svelte-q3wqg9 {
     color: var(--text-accent);
+}
+
+.today.svelte-q3wqg9:hover {
+    color: var(--text-accent-hover);
 }
 
 .day.svelte-q3wqg9:active, .active.svelte-q3wqg9, .active.today.svelte-q3wqg9 {
