@@ -1,5 +1,5 @@
 # The Hundred
-Obsidian CSS Theme inspired by the cricketing format ['The Hundred'](https://www.thehundred.com). The colour of each team is represented in the headings when viewing in preview mode. All headings are white in edit mode to reduce distractions when writing.
+[Obsidian](https://obsidian.md) CSS Theme inspired by the cricketing format ['The Hundred'](https://www.thehundred.com). The colour of each team is represented in the headings when viewing in preview mode. All headings are white in edit mode to reduce distractions when writing.
 
 I haven't completely made up my mind on the preview mode heading colours. If you use this theme, I'd like to know whether you think it's too much. Similarly, please also let me know if you like it.
 
