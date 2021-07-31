@@ -1,0 +1,416 @@
+/*  ---------- 
+    MAIN
+ ----------  */
+
+/*---- ROOT ----*/
+
+:root {
+    --title-font: "Quantico";
+    --default-font: "Open Sans";
+    --highlight-red: #ff0013;
+    --highlight-pink: #ff0082;
+    --highlight-purple: #8c5fff;
+    --highlight-yellow: #ffe600;
+    --highlight-orange: #ff8c00;
+    --highlight-blue: #0000ff;
+    --highlight-green: #33c84b;
+}
+
+.theme-dark {
+    --font-family-editor: var(--default-font);
+    --font-family-preview: var(--default-font);
+    --interactive-accent: var(--highlight-pink);
+    --scrollbar-bg: none;
+    --scrollbar-thumb-bg: none;
+    --text-normal: #fff;
+    --text-accent: var(--highlight-pink);
+    --text-on-accent: #fff;
+    --text-highlight-bg: var(--highlight-yellow);
+    --text-highlight-bg-active: var(--highlight-orange);
+    --interactive-accent-hover: var(--highlight-purple);
+    --text-accent-hover: var(--highlight-purple);
+}
+
+body {
+    --editor-font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h5, h6,
+.cm-s-obsidian .HyperMD-header,
+.view-header-title {
+    font-family: var(--title-font)!important;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.markdown-preview-view h1 {
+    font-size: 175%;
+    line-height: 150%;
+    color: var(--highlight-pink);
+}
+
+.markdown-preview-view h2 {
+    font-size: 150%;
+    line-height: 140%;
+    color: var(--highlight-purple);
+}
+
+.markdown-preview-view h3 {
+    font-size: 130%;
+    line-height: 130%;
+    color: var(--highlight-orange);
+}
+
+.markdown-preview-view h4 {
+    font-size: 120%;
+    line-height: 120%;
+    color: var(--highlight-green);
+}
+
+.markdown-preview-view h5 {
+    font-size: 115%;
+    line-height: 110%;
+    color: var(--highlight-red);
+}
+
+.markdown-preview-view h6 {
+    font-size: 105%;
+    line-height: 110%;
+    color: #fff;
+}
+
+.view-header-title {
+    background: repeating-linear-gradient(45deg, var(--background-primary), var(--background-primary) 50%, var(--highlight-pink) 50%, var(--highlight-pink) 100%);
+}
+
+.workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type.mod-active .view-header-title-container:after {
+    background: var(--background-primary);
+}
+
+/* ----- CODE ----- */
+
+.markdown-preview-view code,
+.cm-s-obsidian span.cm-inline-code {
+    color: var(--highlight-red);
+}
+
+/* ------- THINGS I WANT TO HIDE -----*/
+.empty-state,
+.internal-query-header, 
+.frontmatter-container,
+.nav-folder-title[data-path="/"] {
+    display: none;
+}
+
+
+/* ------- NAV --------*/
+
+.nav-file-title, .nav-folder-title {
+    border: 0;
+    border-radius: 0;
+    font-family: var(--title-font);
+    text-transform: uppercase;
+}
+
+.nav-file-title.is-active, 
+.nav-folder-title.is-active, 
+body:not(.is-grabbing) .nav-file-title:hover, 
+body:not(.is-grabbing) .nav-folder-title:hover {
+    background-color: var(--background-primary);
+    color: var(--highlight-pink);
+}
+
+/* ----- SETTINGS PANEL ----- */
+
+.horizontal-tab-nav-item, .vertical-tab-nav-item {
+    padding: .4em 0 .4em 1em;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* ----- HIGHLIGHTER ----- */
+.markdown-preview-view mark,
+.search-result-file-matched-text,
+.cm-s-obsidian span.cm-formatting-highlight, 
+.cm-s-obsidian span.cm-highlight {
+    color: var(--background-primary);
+}
+
+
+/* ----------------------------------
+auto fades status bar items 
+Credit: rsdimitrov, Obsidian forum 
+----------------------------------- */
+
+.status-bar:not(:hover) .status-bar-item {
+  opacity: 0.25;
+  transition: opacity .25s ease-in-out;
+}
+
+/* -----------------------------------
+Add quotation character before quote 
+Credit: Thery, Obsidian forum
+------------------------------------ */
+blockquote:before {
+  font: 14px/20px italic Times, serif;
+  content: "“";
+  font-size: 3em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+}
+blockquote p { display: inline; }
+
+/* ----------------------------------
+bigger link popup preview  
+Credit: _ph, Obsidian forum
+----------------------------------- */
+.popover.hover-popover {
+    transform: scale(0.8); /* makes the content smaller */
+    max-height: 800px;    /* was 300 */
+    min-height: 100px;
+    width: 500px;     /* was 400 */
+}
+
+/* ----------------------------------
+modified from ITS theme
+----------------------------------- */
+/*Nav Folder Lines*/
+.nav-folder, .nav-file {
+    margin: 0 -2px;
+    margin-right: 0px;
+    border-left: 1px solid var(--text-faint);
+}
+
+/*Align Folder Line*/
+.nav-folder-children {
+    padding-left: 18px;
+}
+
+/*Nav Hover Line Colors*/
+.nav-folder:hover,
+.nav-file:hover {
+    border-color: var(--text-accent);
+}
+
+/*Tag Pane Lines*/
+.tag-container .tree-item-children {
+    margin-left: .7em;
+    border-left: 1px solid var(--text-faint);
+    border-bottom: 1px solid var(--note);  /*Removes Dot!!*/
+    transition: all 0.5s ease-in-out;
+    padding: 0;
+}
+
+.tag-container .tree-item-children:hover {
+    border-left: 1px solid var(--text-accent);
+}
+
+/*Outline Pane Lines*/
+.outline .tree-item-children {
+    margin-left: .7em;
+    border-left: 1px solid var(--text-faint);
+    transition: all 0.3s ease-in-out;
+    padding: 0;
+}
+
+.outline .tree-item-children:hover {
+    border-color: var(--text-accent);
+}
+
+/*Editor Bullet Lines*/
+.markdown-preview-view .task-list-item-checkbox {
+    margin-right: 2%;
+}
+
+.cm-hmd-list-indent .cm-tab {
+    position: relative;
+}
+
+.cm-hmd-list-indent .cm-tab::before {
+    content:'';
+    border-left: 1px solid var(--text-faint);
+    position: absolute;
+    left: 6px;
+    top: -5px;
+    bottom: -4px; 
+}
+
+.cm-s-obsidian .HyperMD-list-line {
+    padding-top: 0;
+}
+
+
+/*---- PREVIEW MODE ----*/
+
+.markdown-embed .markdown-preview-view {
+    padding: 0;
+}
+
+.markdown-preview-view .markdown-embed, .markdown-preview-view .file-embed {
+    border-left: 1px solid var(--background-modifier-border);
+    border-top: 0;
+    border-bottom: 0;
+    padding: 0 24px;
+    margin: 0;
+}
+
+div.markdown-preview-view {
+    font-family: var(--font-family-preview);
+}
+
+.markdown-preview-view blockquote {
+    border-radius: 0;
+    border: 0px solid var(--text-accent);
+    border-left-width: 5px;
+}
+
+/*---------------------------
+LIST RELATIONSHIP LINES - PREVIEW ONLY
+Credit: Obsidian forum (this appears in a lot of places,
+it's difficult to identify the original author)
+---------------------------*/
+
+ul {
+    position: relative; 
+}
+
+ul ul::before {
+    content:'';
+    border-left: 1px solid var(--interactive-accent);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+ul ul::before {
+    left: -11px;
+}
+
+/*---- NOTE TRANSCLUSION PREVIEW ----*/
+
+.markdown-embed-title, .file-embed-title {
+    font-size: 0;
+}
+
+.markdown-embed-title {
+    height: 0;
+}
+
+/*---- SIDE PANES ----*/
+
+.view-header, .workspace-ribbon.is-collapsed, .workspace-ribbon.mod-left.is-collapsed, .workspace-leaf.mod-active .view-header, .workspace-split.mod-root > .workspace-leaf:first-of-type:last-of-type .view-header, .status-bar {
+    background-color: var(--background-primary);
+    border: none;
+}
+
+.workspace-leaf-resize-handle {
+    background: repeating-linear-gradient(45deg, var(--highlight-pink), var(--highlight-pink) 20px, var(--background-primary) 20px, var(--background-primary) 40px);
+    width: .5em!important;
+}
+
+/*---- TAGS ----*/
+
+a.tag {
+    font-size: 11px;
+    color: var(--text-normal);
+    text-decoration: none;
+    background-color: var(--interactive-accent);
+    border-radius: 0;
+    padding: .3em .7em;
+    display: inline-block;
+    transform: skewX(-20deg);
+}
+
+a.tag:hover {
+    background-color: var(--text-accent-hover);
+}
+
+/* ---------- GRAPH ------------- */
+
+.graph-controls {
+    position: absolute;
+    background-color: var(--background-primary);
+    border: 1px solid var(--interactive-accent);
+}
+
+/* ----- fake admonition ----- */
+
+/* ----- PINK HIGHLIGHT ----- */
+.sourcenote h6[data-heading="pink"] {
+  font-size: 0;
+  background-color: var(--background-secondary);
+  margin-bottom: 0;
+  border-top: 3px solid var(--highlight-pink);
+  padding: 0;
+}
+
+/* ----- YELLOW HIGHLIGHT ----- */
+.sourcenote h6[data-heading="yellow"] {
+  font-size: 0;
+  background-color: var(--background-secondary);
+  margin-bottom: 0;
+  border-top: 3px solid var(--highlight-yellow);
+  padding: 0;
+}
+
+/* ----- ORANGE HIGHLIGHT ----- */
+.sourcenote h6[data-heading="orange"] {
+  font-size: 0;
+  background-color: var(--background-secondary);
+  margin-bottom: 0;
+  border-top: 3px solid var(--highlight-orange);
+  padding: 0;
+}
+
+/* ----- BLUE HIGHLIGHT ----- */
+.sourcenote h6[data-heading="blue"] {
+  font-size: 0;
+  background-color: var(--background-secondary);
+  margin-bottom: 0;
+  border-top: 3px solid var(--highlight-blue);
+  padding: 0;
+}
+
+.sourcenote p {
+  padding-left: 30px;
+  background-color: var(--background-secondary);
+  margin: 0;
+  padding: 10px;
+}
+
+
+
+/*  ----------------------------------  
+		PLUGINS
+-------------------------------------*/
+
+/*  ----------  CALENDAR ----------  */
+
+#calendar-container .reset-button {
+    font-size: 12px!important;
+}
+
+#calendar-container .year {
+    color: var(--text-faint);
+    font-weight: 400;
+}
+
+#calendar-container .month {
+    color: var(--text-accent);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#calendar-container .month, #calendar-container .title, #calendar-container .reset-button {
+    font-size: 18px;
+}
+
+.today.svelte-q3wqg9 {
+    color: var(--text-accent);
+}
+
+.day.svelte-q3wqg9:active, .active.svelte-q3wqg9, .active.today.svelte-q3wqg9 {
+    color: var(--text-on-accent);
+    background-color: var(--interactive-accent);
+}
