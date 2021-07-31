@@ -32,8 +32,14 @@ Unless otherwise stated, all references originate from the Obsidian forum.
 
 #### Edit mode
 
+<img width="1440" alt="Screenshot 2021-07-31 at 12 52 38" src="https://user-images.githubusercontent.com/57481833/127739138-613fc94d-9892-404c-93e9-bf0f215502f4.png">
+<img width="1440" alt="Screenshot 2021-07-31 at 12 52 56" src="https://user-images.githubusercontent.com/57481833/127739140-54e94f1c-9877-4f24-b1d0-70c66ba23dbe.png">
 
 #### Preview mode
 
+<img width="1440" alt="Screenshot 2021-07-31 at 12 53 09" src="https://user-images.githubusercontent.com/57481833/127739147-2b4455d6-1f60-4b2a-8ca0-8ef493ee1ed6.png">
+<img width="1440" alt="Screenshot 2021-07-31 at 12 53 21" src="https://user-images.githubusercontent.com/57481833/127739152-11b022f2-683e-46cf-bb19-c55a4c0ff29a.png">
 
 #### Calendar plugin and sidebar styling
+
+<img width="1440" alt="Screenshot 2021-07-31 at 12 53 53" src="https://user-images.githubusercontent.com/57481833/127739155-bb4c4550-1eda-4e8d-905f-269373f68a66.png">
