@@ -32,14 +32,14 @@ Unless otherwise stated, all references originate from the Obsidian forum.
 
 #### Edit mode
 
-<img width="1440" alt="Screenshot 2021-07-31 at 12 52 38" src="https://user-images.githubusercontent.com/57481833/127739138-613fc94d-9892-404c-93e9-bf0f215502f4.png">
-<img width="1440" alt="Screenshot 2021-07-31 at 12 52 56" src="https://user-images.githubusercontent.com/57481833/127739140-54e94f1c-9877-4f24-b1d0-70c66ba23dbe.png">
+<img width="1440" alt="Screenshot 2021-07-31 at 13 26 22" src="https://user-images.githubusercontent.com/57481833/127739826-355d74d3-5300-4dd0-bcc3-bd90a037219d.png">
 
 #### Preview mode
 
-<img width="1440" alt="Screenshot 2021-07-31 at 12 53 09" src="https://user-images.githubusercontent.com/57481833/127739147-2b4455d6-1f60-4b2a-8ca0-8ef493ee1ed6.png">
-<img width="1440" alt="Screenshot 2021-07-31 at 12 53 21" src="https://user-images.githubusercontent.com/57481833/127739152-11b022f2-683e-46cf-bb19-c55a4c0ff29a.png">
+<img width="1440" alt="Screenshot 2021-07-31 at 13 25 56" src="https://user-images.githubusercontent.com/57481833/127739834-1acffa6a-4199-42aa-b70a-aff4cee72539.png">
+<img width="1440" alt="Screenshot 2021-07-31 at 13 26 12" src="https://user-images.githubusercontent.com/57481833/127739843-4d3cc879-e10c-4536-9ae7-275551a5e5d8.png">
 
 #### Calendar plugin and sidebar styling
 
-<img width="1440" alt="Screenshot 2021-07-31 at 12 53 53" src="https://user-images.githubusercontent.com/57481833/127739155-bb4c4550-1eda-4e8d-905f-269373f68a66.png">
+<img width="1440" alt="Screenshot 2021-07-31 at 13 26 32" src="https://user-images.githubusercontent.com/57481833/127739847-376a2021-8712-4072-ac89-9ca8f2557af2.png">
+
